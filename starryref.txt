@@ -1,0 +1,62 @@
+0	+	Invalid opcode.
+1	+	Duplicate top of stack.
+dup
+2	+	Swap top 2 stack elements.
+swap
+3	+	Rotate top 3 stack elements.
+rotate
+4	+	Pop top of stack.
+pop
+n ≥ 5	+	Push n − 5 to stack.
+push n
+0 mod 5	*	Pop y, pop x, push x + y.
++
+1 mod 5	*	Pop y, pop x, push x − y.
+-
+2 mod 5	*	Pop y, pop x, push x * y.
+*
+3 mod 5	*	Pop y, pop x, push x / y.
+/
+4 mod 5	*	Pop y, pop x, push x mod y.
+mod
+0 mod 2	.	Pop a value and print it as a number.
+print_n
+1 mod 2	.	Pop a value and print it as an ASCII character.
+print_s
+0 mod 2	,	Read a number from input.
+read_n
+1 mod 2	,	Read an ASCII value from input.
+read_s
+n	`	Mark label n.
+label n
+n	'	Pop a value; if non-zero, jump to label n.
+jump_nz n
+
+dup
+swap
+rotate
+pop
+push n
++
+-
+*
+/
+mod
+print_n
+print_s
+read_n
+read_s
+label n
+jump_nz n
+eof
+
+********************
+*                  *
+*                  *
+*                  *
+*                  *
+*                  *
+*                  *
+*                  *
+*                  *
+

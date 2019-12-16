@@ -1,0 +1,52 @@
+read_n
+read_n //20-10
+dup
+label 1
+push 42
+print_s
+push 1
+-
+dup
+jump_nz 1
+pop
+push 10
+print_s
+swap
+dup
+push 2
+- //8-10-20
+label 2
+rotate //20-8-10
+rotate
+push 42
+print_s
+dup
+push 2
+-
+label 3 //18-20-8-10
+push 32
+print_s
+push 1
+-
+dup
+jump_nz 3
+pop
+push 42
+print_s
+push 10
+print_s //20-8-10
+rotate //8-10-20
+push 1
+-
+dup
+jump_nz 2
+pop //10-20
+pop
+label 4
+push 42
+print_s
+push 1
+-
+dup
+jump_nz 4
+eof

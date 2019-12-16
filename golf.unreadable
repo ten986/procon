@@ -1,0 +1,15 @@
+oioioioioi
+
+ois1+++++++++1
+
+o|'"X	Print X as a Unicode character and return X.
++|'""X	Return X + 1.
+1|'"""	Return 1.
+:|'""""XY	Do both X and Y and return what Y returned.
+r|'"""""XY	Do Y while X is not 0 and return the last result.
+s|'""""""XY	Set variable number X to Y and return Y.
+g|'"""""""X	Return the value of variable X, or 0 if the variable has never been assigned.
+-|'""""""""X	Return X - 1.
+?|'"""""""""XYZ	If X is not 0 do Y else do Z. Return what Y/Z returned.
+i|'""""""""""	Return a single Unicode character which has been read from stdin, or -1 if stdin is exhausted.
+@|eof

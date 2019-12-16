@@ -1,0 +1,11 @@
+\documentclass[11pt,a4paper]{jarticle}
+%
+\usepackage{graphicx}
+\usepackage[dvipdfm]{hyperref}
+
+
+\begin {document}
+
+\input{test.tex}
+\end{document}
+
